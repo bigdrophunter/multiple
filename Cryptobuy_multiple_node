@@ -17,22 +17,23 @@ fi
 sleep 1
 
 # Отображаем логотип                                      
-echo -e "    _____                      _           _                   "
-echo -e "   / ____|                    | |         | |                  "
-echo -e "  | |      _ __  _   _  _ __  | |_   ___  | |__   _   _  _   _ "
-echo -e "  | |     | '__|| | | || '_ \ | __| / _ \ | '_ \ | | | || | | |"
-echo -e "  | |____ | |   | |_| || |_) || |_ | (_) || |_) || |_| || |_| |"
-echo -e "   \_____ |_|    \__, || .__/  \__| \___/ |_.__/  \__,_| \__, |"
-echo -e "                  __/ || |                                __/ |"
-echo -e "                 |___/ |_|                               |___/ "
+echo -e "\e[35m    _____                      _           _                   \e[0m"
+echo -e "\e[35m   / ____|                    | |         | |                  \e[0m"
+echo -e "\e[35m  | |      _ __  _   _  _ __  | |_   ___  | |__   _   _  _   _ \e[0m"
+echo -e "\e[35m  | |     | '__|| | | || '_ \ | __| / _ \ | '_ \ | | | || | | |\e[0m"
+echo -e "\e[35m  | |____ | |   | |_| || |_) || |_ | (_) || |_) || |_| || |_| |\e[0m"
+echo -e "\e[35m   \_____ |_|    \__, || .__/  \__| \___/ |_.__/  \__,_| \__, |\e[0m"
+echo -e "\e[35m                  __/ || |                                __/ |\e[0m"
+echo -e "\e[35m                 |___/ |_|                               |___/ \e[0m"
+
 
 
 
 # Меню
 echo -e "${YELLOW}Выберите действие:${NC}"
-echo -e "${CYAN}1) Установка ноды${NC}"
-echo -e "${CYAN}2) Проверка статуса ноды${NC}"
-echo -e "${CYAN}3) Удаление ноды${NC}"
+echo -e "${CYAN}1. Установка ноды${NC}"
+echo -e "${CYAN}2. Проверка статуса ноды${NC}"
+echo -e "${CYAN}3. Удаление ноды${NC}"
 
 echo -e "${YELLOW}Введите номер:${NC} "
 read choice
@@ -97,8 +98,8 @@ case $choice in
         echo -e "${YELLOW}Команда для проверки статуса ноды:${NC}"
         echo "cd ~/multipleforlinux && ./multiple-cli status"
         echo -e "${PURPLE}-----------------------------------------------------------------------${NC}"
-        echo -e "${GREEN}Cryptobuy — Все, что нужно из мира крипты!${NC}"
-        echo -e "${CYAN}Telegram https://t.me/cryptobuyon${NC}"
+        echo -e "${PURPLE}Cryptobuy — Все, что нужно из мира крипты!${NC}"
+        echo -e "${PURPLE}Telegram https://t.me/cryptobuyon${NC}"
         sleep 2
         cd ~/multipleforlinux && ./multiple-cli status
         ;;
@@ -123,8 +124,8 @@ case $choice in
 
         # Завершающий вывод
         echo -e "${PURPLE}-----------------------------------------------------------------------${NC}"
-        echo -e "${GREEN}}Cryptobuy — Все, что нужно из мира крипты!${NC}"
-        echo -e "${CYAN}Telegram https://t.me/cryptobuyon${NC}"
+        echo -e "${PURPLE}Cryptobuy — Все, что нужно из мира крипты!${NC}"
+        echo -e "${PURPLE}Telegram https://t.me/cryptobuyon${NC}"
         sleep 1
         ;;
         
